@@ -1,24 +1,24 @@
- <!doctype html>
-<html lang="Default">
+<!doctype html>
+<html lang="fr">
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
+	<title>Contacter La chouette agence - Agence web design Lyon</title>
+    <meta name="description" content="Site internet, identité visuelle ou optimisation de contenu, nos designers vous aideront à développer votre activité. Contactez-nous.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <link rel="shortcut icon" type="image/png" href="favicon.jpg">
     
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="shortcut icon" type="image/png" href="favicon.jpg">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
 	
     
-	<script src="./js/jquery-2.1.0.min.js"></script>
-	<script src="./js/bootstrap.min.js"></script>
-	<script src="./js/blocs.min.js"></script>
-	<script src="./js/jqBootstrapValidation.js"></script>
-	<script src="./js/formHandler.js"></script>
-    <title>page2</title>
+	<script src="./js/jquery-2.1.0.js" defer></script>
+	<script src="./js/bootstrap.js" defer></script>
+	<script src="./js/blocs.js" defer></script>
+	<script src="./js/jqBootstrapValidation.js" defer></script>
+	<script src="./js/formHandler.js" defer></script>
+    
 
     
 <!-- Analytics -->
@@ -48,7 +48,7 @@
 					<li>
 					</li>
 					<li>
-						<a href="page2.html">page2 &gt;</a>
+						<a href="contact.html">Contact</a>
 					</li>
 				</ul>
 			</div>
@@ -80,29 +80,30 @@
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-6">
-				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+				<form method="post" action="form_1.php" id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
 					<div class="form-group">
-						<label>
+						<label for="name">
 							Nom
 						</label>
-						<input id="name" class="form-control" required />
+						<input id="name" class="form-control" type="text" placeholder="Votre nom" required />
 					</div>
 					<div class="form-group">
-						<label>
+						<label for="email">
 							Adresse email
 						</label>
-						<input id="email" class="form-control" type="email" required />
+						<input id="email" class="form-control" type="email" placeholder="Votre adresse email" required />
 					</div>
 					<div class="form-group">
-						<label>
+						<label for="input_504">
 							Comment nous avez-vous connu ?
 						</label>
-						<input class="form-control" type="email" required id="input_504" />
+						<input id="input_504" class="form-control" type="text" placeholder="Comment nous avez-vous connu ?" required />
 					</div>
 					<div class="form-group">
-						<label>
+						<label for="message">
 							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-						</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+						</label>
+						<textarea id="message" class="form-control" rows="4" cols="50" placeholder="Expliquez nous votre projet" required></textarea>
 					</div> 
 					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
 						Envoyer

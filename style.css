@@ -1,4 +1,5 @@
 body {
+    min-width: 320px;
     margin: 0;
     padding: 0;
     background: #FFF;
@@ -677,10 +678,15 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 16px;
+}
+
+p.col-sm-12.text-center {
+    font-size: 1.5em;
 }
 
 .tight-width-whitespace {
+    min-width: 400px;
     max-width: 600px;
     margin: auto auto auto auto;
 }
@@ -707,6 +713,8 @@ p {
 h2 {
     font-size: 22px;
     line-height: 1.4em;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 h3 {
@@ -728,6 +736,16 @@ h1 {
 
 h4 {
     color: #333333!important;
+}
+
+q {
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+figcaption {
+    font-size: 1.2em;
+    margin-top: 10px;
 }
 
 .icons {
@@ -778,6 +796,10 @@ h4 {
     color: #F3976C!important;
 }
 
+p.tc-white {
+    font-size: 1.5em;
+}
+
 .btn-atomic-tangerine {
     background: #F3976C;
     color: #FFFFFF!important;
@@ -822,7 +844,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {

@@ -710,6 +710,10 @@ p.col-sm-12.text-center {
     margin: auto auto auto auto;
 }
 
+.label{
+    display: none;
+}
+
 h2 {
     font-size: 22px;
     line-height: 1.4em;

@@ -10,13 +10,19 @@ body {
 
 a,
 button {
-    transition: all .3s ease-in-out;
+    transition: all .1s ease-in-out;
     outline: none!important;
 }
 
 a:hover {
-    text-decoration: none;
+    text-decoration: underline!important;
+    font-weight: bold;
     cursor: pointer;
+}
+
+:focus {
+    padding: 10px;
+    border: 2px dashed black;
 }
 
 #page-loading-blocs-notifaction {
@@ -92,7 +98,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
+    /*background: url("img/texture-paper.png");*/
     background-size: 280px 280px;
 }
 
@@ -686,8 +692,9 @@ p.col-sm-12.text-center {
 }
 
 .tight-width-whitespace {
-    min-width: 400px;
+    min-width: 320px;
     max-width: 600px;
+    padding: 30px;
     margin: auto auto auto auto;
 }
 
@@ -706,8 +713,16 @@ p.col-sm-12.text-center {
 }
 
 .social {
+    color: rgba(0, 0, 0, 0.9)!important;
     max-width: 400px;
+    padding: 10px;
     margin: auto auto auto auto;
+}
+
+.social .fa:hover {
+    text-decoration: none!important;
+    padding-bottom: 5px;
+    border-bottom: 2px solid black;
 }
 
 .label{
@@ -780,7 +795,7 @@ figcaption {
 }
 
 .bold-link {
-    font-weight: 900;
+    font-weight: bold;
     text-decoration: underline!important;
 }
 
@@ -793,11 +808,11 @@ figcaption {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #CD470E;
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #FFFFFF!important;
 }
 
 p.tc-white {
@@ -805,13 +820,13 @@ p.tc-white {
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: #CD470E!important;
     color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
-    color: #FFFFFF!important;
+    color: #000000!important;
+    text-decoration: underline;
 }
 
 .ltc-white {
@@ -819,15 +834,11 @@ p.tc-white {
 }
 
 .ltc-white:hover {
-    color: #cccccc!important;
+    color: #000000!important;
 }
 
 .ltc-atomic-tangerine {
-    color: #F3976C!important;
-}
-
-.ltc-atomic-tangerine:hover {
-    color: #c27956!important;
+    color: #CD470E!important;
 }
 
 .icon-dark-slate-blue {
@@ -959,6 +970,7 @@ p.tc-white {
     }
     .nav > li:hover {
         background: rgba(0, 0, 0, .08);
+        text-decoration: underline;
     }
     .dropdown .dropdown a .caret {
         float: none;
@@ -1028,6 +1040,7 @@ p.tc-white {
         display: none;
     }
     .voffset {
+        padding: 30px;
         margin-top: 5px;
     }
     .voffset-md {

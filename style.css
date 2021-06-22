@@ -21,7 +21,7 @@ a:hover {
 }
 
 :focus {
-    padding: 10px;
+    padding: 2.5px;
     border: 2px dashed black;
 }
 
@@ -460,6 +460,11 @@ nav .caret {
     margin: 0 5px 5px 0;
 }
 
+.btn:focus {
+        padding: 2.5px;
+        border: 2px dashed black;
+}
+
 .btn.pull-right {
     margin: 0 0 5px 5px;
 }
@@ -894,13 +899,13 @@ p.tc-white {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -919,8 +924,8 @@ p.tc-white {
         position: relative;
     }
     .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        padding-left: 12px;
+        padding-right: 12px;
     }
     .bloc-group,
     .bloc-group .bloc {
@@ -930,8 +935,6 @@ p.tc-white {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
